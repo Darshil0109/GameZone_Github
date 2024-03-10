@@ -11,3 +11,6 @@ or You can simply [click here](https://docs.python.org/3/library/tkinter.html) f
 
 
 and for python installation you can download & install it from [python.org](https://www.python.org/downloads/)
+
+
+[gamezone.py](gamezone.py) is the main file and Run it to get Output
