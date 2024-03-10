@@ -4,7 +4,7 @@ to Install it you can simply open command prompt as administrator
 and type the following command:
 
 
-pip install tk
+```pip install tk```
 or You can simply [click here](https://docs.python.org/3/library/tkinter.html) for detail information on this library 
 
 
