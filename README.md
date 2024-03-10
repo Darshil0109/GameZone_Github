@@ -5,8 +5,8 @@ and type the following command:
 
 
 pip install tk
-or You can simply [click here] (https://docs.python.org/3/library/tkinter.html) for detail information on this library 
+or You can simply [click here](https://docs.python.org/3/library/tkinter.html) for detail information on this library 
 
 
 
-and for python installation you can download & install it from [python.org] (https://www.python.org/downloads/)
+and for python installation you can download & install it from [python.org](https://www.python.org/downloads/)
