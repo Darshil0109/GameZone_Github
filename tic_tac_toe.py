@@ -17,15 +17,12 @@ class TicTacToe:
                 else:
                     self.board_place[a]="X"
                     self.l.remove(a)
-                    print("After Removing User choice l",self.l)
                     self.turn= 0 if self.turn==1 else 1
             else:
                 self.num=self.computer_logic()
                 print("Computer choice is :",self.num)
                 self.board_place[self.num]="O"
-                print("Before Removing PC choice l",self.l)
                 self.l.remove(self.num)
-                print("After Removing PC choice l",self.l)
                 self.turn= 0 if self.turn==1 else 1    
             self.user_won=self.isWon("X")
             self.computer_won=self.isWon("O")
