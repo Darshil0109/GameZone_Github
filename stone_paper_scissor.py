@@ -3,19 +3,25 @@ import random
 from functools import partial
 class SPS:
     def __init__(self):
+        # To get window 
         self.root=Tk()
         self.height1=400
         self.width1=600
+        # To get screen width of device so can center the window
         self.w=(self.root.winfo_screenwidth())
         self.h=(self.root.winfo_screenheight())
         self.x=(self.w/2)-(self.width1/2)
         self.y=(self.h/2)-(self.height1/2)
+        # Set window at middle of the screen
         self.root.geometry('%dx%d+%d+%d' % (self.width1, self.height1, self.x, self.y))
+        # Set window to appear at front of all window instead of back of the other windows
         self.root.attributes("-topmost", True)
     def getUserChoice(self,a):
         self.user_choice=a.lower()
+        # computer's choice from list
         self.num=random.choice(["stone","paper","scissor"])
         print(" Computer's choice: ",self.num)
+        # Check who won 
         if (self.user_choice== "stone" and self.num=="paper") or (self.user_choice== "paper" and self.num=="scissor") or (self.user_choice== "scissor" and self.num=="stone"):
             self.c=Label(text="User's Choice: "+self.user_choice,font=("Arial",20))
             self.b=Label(text="Computer's Choice: "+self.num,font=("Arial",20))
@@ -28,17 +34,22 @@ class SPS:
             self.c=Label(text="User's Choice: "+self.user_choice,font=("Arial",20))
             self.b=Label(text="Computer's Choice: "+self.num,font=("Arial",20))
             self.a=Label(text="User Won",font=("Arial",20))
+        # Pack method used to show element properly
         self.b.pack()
         self.c.pack()
         self.a.pack()
+        # To destroy(Delete) button
         self.stone_btn.destroy()
         self.paper_btn.destroy()
         self.scissor_btn.destroy()
 
 
     def main(self):
+        # Image in button 
         self.stone_photo=PhotoImage(file="rock.png")
+        # image height and width devide by 2 so image can fit inside button
         self.stone_photo_image=self.stone_photo.subsample(2,2)
+        # Define button size height width
         self.stone_btn = Button(self.root, text="Button-1",image=self.stone_photo_image,height=100,width=140,command=partial(self.getUserChoice,"stone"))
         self.paper_photo=PhotoImage(file="paper.png")
         self.paper_photo_image=self.paper_photo.subsample(2,2)
@@ -49,5 +60,4 @@ class SPS:
         self.stone_btn.pack()
         self.paper_btn.pack()
         self.scissor_btn.pack()
-        self.root.mainloop() 
-
+        self.root.mainloop()

@@ -5,17 +5,24 @@ class InvalidValueException(Exception):
 class Cricket():
     def __init__(self):
         self.score=0
+        # If User or pc score is -1 then It's Batting still remain 
         self.user_score=-1
         self.pc_score=-1
         self.temp_score=0
         self.temp_pc_score=0
+    # Method to Print Rules
     def printRules(self):
-        print("Rules: ")
-        print("User Should enter Number for scoring that number into runs while batting. ")
-        print("Computer will show a number if both number are same then batsman gets out. ")
-        print("Same Rule Will apply for User's Bowling User Have to guess same number of pc to get it OUT")
+        print("+ + ---------------------------------------------------------------------------------------------------------------------- + +")
+        print("+ + ---------------------------------------------------------------------------------------------------------------------- + +")
+        print("+ + \tRules: \t\t\t\t\t\t\t\t\t\t\t\t\t\t   + +")
+        print("+ + \tUser Should enter Number for scoring that number into runs while batting.\t\t\t\t\t   + +")
+        print("+ + \tComputer will show a number if both number are same then batsman gets out.\t\t\t\t\t   + +")
+        print("+ + \tSame Rule Will apply for User's Bowling User Have to guess same number of pc to get it OUT\t\t\t   + +")
+        print("+ + ---------------------------------------------------------------------------------------------------------------------- + +")
+        print("+ + ---------------------------------------------------------------------------------------------------------------------- + +")
     def userBowling(self):
         while True: 
+            # Get User's Bowling Input For different delivery variation that which delivery User choose to Bowl 
             self.user_choice=int(input("Enter Integer Between 0 to 6 to get pc OUT: "))
             if self.user_choice>6 or self.user_choice<0:
                 raise InvalidValueException("You Entered Invalid Value")
