@@ -12,14 +12,29 @@ class Cricket():
         self.temp_pc_score=0
     # Method to Print Rules
     def printRules(self):
-        print("+ + ---------------------------------------------------------------------------------------------------------------------- + +")
-        print("+ + ---------------------------------------------------------------------------------------------------------------------- + +")
-        print("+ + \tRules: \t\t\t\t\t\t\t\t\t\t\t\t\t\t   + +")
-        print("+ + \tUser Should enter Number for scoring that number into runs while batting.\t\t\t\t\t   + +")
-        print("+ + \tComputer will show a number if both number are same then batsman gets out.\t\t\t\t\t   + +")
-        print("+ + \tSame Rule Will apply for User's Bowling User Have to guess same number of pc to get it OUT\t\t\t   + +")
-        print("+ + ---------------------------------------------------------------------------------------------------------------------- + +")
-        print("+ + ---------------------------------------------------------------------------------------------------------------------- + +")
+        print("Cricket Challenge Rules")
+        print("Batting Rules:")
+        print("1. As the batsman, your goal is to score runs by entering numbers.")
+        print("2. You can continue batting until you either get out or decide to declare.")
+        print("3. Each number you enter represents the runs you score on that delivery.")
+        print("4. However, if the number you enter matches the number chosen by the computer, you'll be declared out, so choose your numbers wisely!\n")
+
+        print("Bowling Rules:")
+        print("1. As the bowler, your aim is to dismiss the batsman by guessing the number they've entered.")
+        print("2. Enter a number of your own, attempting to match the batsman's number to get them out.")
+        print("3. Accurately guessing the batsman's number will result in them being declared out.\n")
+
+        print("Game Dynamics:")
+        print("1. The game proceeds with alternating turns between batting and bowling.")
+        print("2. There is no limit to the number of deliveries per player; the game continues until the batsman is dismissed or wins.\n")
+
+        print("User Interface:")
+        print("1. Enjoy a modern and intuitive interface designed for easy interaction.")
+        print("2. Simply input your chosen number using the provided interface to make your move.")
+        print("3. Clear and concise feedback will keep you informed of the game's progress and your performance.\n")
+
+        print("Get ready to immerse yourself in the excitement of our Cricket Challenge! Step up to the crease and prove your mettle in this thrilling battle of numbers!")
+
     def userBowling(self):
         while True: 
             # Get User's Bowling Input For different delivery variation that which delivery User choose to Bowl 
