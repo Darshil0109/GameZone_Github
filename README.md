@@ -16,7 +16,7 @@ Get ready for fast-paced action in Egg Catcher, where your task is to catch fall
 
 3 ) Tic Tac Toe - Player vs. Computer:
 
-Welcome to the exhilarating world of Tic Tac Toe, where you'll engage in thrilling battles against a computer opponent powered by your very own logic!
+Welcome to the exhilarating world of Tic Tac Toe, where you'll engage in thrilling battles against a computer opponent powered by our very own logic!
 
 4 ) Cricket - Player vs. Computer: 
 
@@ -51,9 +51,6 @@ Install Tkinter Library using pip
 
 - [@Darshil0109](https://github.com/Darshil0109)
 
-
-## 🚀 About Me
-I'm a student at Lok Jagruti Institute of Engineering and Technology,Ahmedabad,Gujarat,India and Want to become a Full Stack Developer.
 
 
 ## Lessons Learned
